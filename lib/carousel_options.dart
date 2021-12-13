@@ -118,6 +118,9 @@ class CarouselOptions {
   /// Whether or not to add padding in the ends
   final bool padEnds;
 
+  /// Change cliip behavior
+  final Clip clipBehaviour;
+
   CarouselOptions({
     this.height,
     this.aspectRatio: 16 / 9,
@@ -142,5 +145,6 @@ class CarouselOptions {
     this.enlargeStrategy: CenterPageEnlargeStrategy.scale,
     this.disableCenter: false,
     this.padEnds = true,
+    this.clipBehaviour = Clip.none,
   });
 }
